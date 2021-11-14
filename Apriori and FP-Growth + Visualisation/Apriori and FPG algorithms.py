@@ -6,6 +6,7 @@ import time
 from PyARMViz import PyARMViz
 
 
+
 pp = pprint.PrettyPrinter(indent=4, compact=False)
 transactions = []
 with open('pharmacy_busket.csv', 'r') as dataset:
@@ -36,15 +37,15 @@ for item in rules:
 
 print("\nТестируем время работы алгоритмов")
 transactions = transactions*10000
-#  ---
+#  ----
 start_time = time.time()
 apriori(transactions, minSup=0.2, minConf=0.6)
 print("Apriori: --- %s seconds ---" % (time.time() - start_time))
-#  ---
+#  ----
 start_time = time.time()
 efficient_apriori(transactions, min_support=0.2, min_confidence=0.6)
 print("Efficient apriori: --- %s seconds ---" % (time.time() - start_time))
-#  ---
+#  ----
 start_time = time.time()
 fpgrowth(transactions, minSupRatio=0.2, minConf=0.6)
 print("FPGrowth: --- %s seconds ---" % (time.time() - start_time))
