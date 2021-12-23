@@ -13,6 +13,7 @@
 
 - prepocessing data;
 - normalizing data with StandardScaler;
+- balancing train data with SMOTE;
 - GridSearch hyperparameters and comparing results;
 - visualising models with t-SNE and UMAP;
 - checking CatBoost algorithm with the same data;
