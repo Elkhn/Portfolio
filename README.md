@@ -29,3 +29,11 @@
 - looking at Law of large numbers and Central limit theorem;
 - comparing GA, PSO and Gradient Descent;
 - animating GD and PSO algorithms.
+
+## K-means, DBSCAN and FCM clusterizations
+
+- creating clusters with 10 centers;
+- K-Means clusterization with 2-10 clusters;
+- DBSCAN clusterization with different eps and min_samples;
+- Fuzzy-C-Means clusterization with 2-10 clusters;
+- comparing best clusterizations.
