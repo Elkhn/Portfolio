@@ -18,3 +18,14 @@
 - visualising models with t-SNE and UMAP;
 - checking CatBoost algorithm with the same data;
 - looking feature importance (FI) with CatBoost and SHAP.
+
+## Rosenbrock function Optimization (Newton, GD, PSO, GA)
+
+- plotting Ronsenbrock function 3D and 2D;
+- implementing Newton's method;
+- implementing Gradient Descent;
+- implementing Particle Swarm Optimization (PSO) algorithm;
+- implementing Genetic Algorithm algorithm (GA);
+- looking at Law of large numbers and Central limit theorem;
+- comparing GA, PSO and Gradient Descent;
+- animating GD and PSO algorithms.
