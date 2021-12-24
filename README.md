@@ -37,3 +37,13 @@
 - DBSCAN clusterization with different eps and min_samples;
 - Fuzzy-C-Means clusterization with 2-10 clusters;
 - comparing best clusterizations.
+
+## Recurrent Neural Networks (Time Series) - LTSM, GRU, Simple_RNN
+
+- prepocessing data;
+- normalizing data with MinMax scaler;
+- generating time series;
+- implementing LSTM model;
+- implementing GRU model;
+- implementing SimpleRNN model;
+- comparing results on CPU and GPU learning (Google Collab).
