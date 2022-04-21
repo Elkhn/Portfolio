@@ -1,6 +1,14 @@
 # ML-learning
 > Samples of some ML algorithms and visualisations
 
+## STS (Semantic Textual Similarity)
+
+- cleaning data;
+- preprocessing data for transformers;
+- creating embeddings with paraphrase-multilingual-MiniLM-L12-v2 Transformer;
+- creating embeddings with universal-sentence-encoder-multilingual Transformer;
+- comparing embeddings Cosine similarity.
+
 ## Efficent Apriori and FP-Growth - Frequent itemset mining algorithms
 
 - prepocessing data;
