@@ -1,0 +1,23 @@
+# Use a base image with Apache Airflow 2.5.1 installed
+FROM apache/airflow:2.5.1
+
+# Set the working directory
+# WORKDIR /app
+
+# Set environment variables
+# ENV AIRFLOW_HOME /app/airflow
+
+USER root
+# Install the required dependencies
+RUN apt-get update && \
+    apt-get install -y python3 python3-pip
+
+RUN curl -sSL https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -o /tmp/miniconda.sh && \  
+    bash /tmp/miniconda.sh -bfp /usr/local &&  \ 
+    rm -rf /tmp/miniconda.sh && \
+    conda install -y -c r r-essentials r-base && \
+    conda clean --all
+
+RUN pip3 install apache-airflow apache-airflow-providers-docker
+
+# USER 0
